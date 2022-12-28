@@ -203,6 +203,7 @@ func New(i Interface, c *Config) (Service, error) {
 //    - OnFailure               string ("restart" )   - Action to perform on service failure. (restart | reboot | noaction)
 //    - OnFailureDelayDuration  string ( "1s" )       - Delay before restarting the service, time.Duration string.
 //    - OnFailureResetPeriod    int ( 10 )            - Reset period for errors, seconds.
+//    - PreshutdownTimeout      int (0)               - extend the shutdown timeout of the service (in milliseconds)
 type KeyValue map[string]interface{}
 
 // bool returns the value of the given name, assuming the value is a boolean.
