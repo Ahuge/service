@@ -1,4 +1,4 @@
-module github.com/kardianos/service
+module github.com/Ahuge/service
 
 go 1.12
 
